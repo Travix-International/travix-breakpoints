@@ -1,9 +1,11 @@
 {
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "extends": [
-    "travix"
-  ],
-  "parser": "babel-eslint",
-  "rules": {
-    "no-underscore-dangle": 0
-  }
+    "eslint:recommended"
+  ]
 }
