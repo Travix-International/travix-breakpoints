@@ -1,8 +1,35 @@
 # travix-breakpoints
 
-[![npm](https://img.shields.io/npm/v/travix-breakpoints.svg)](https://www.npmjs.com/package/travix-breakpoints) [![Build Status](https://img.shields.io/travis/Travix-International/travix-breakpoints/master.svg)](http://travis-ci.org/Travix-International/travix-breakpoints) [![Coverage](https://img.shields.io/coveralls/Travix-International/travix-breakpoints.svg)](https://coveralls.io/github/Travix-International/travix-breakpoints) [![NSP Status](https://nodesecurity.io/orgs/travix-international-bv/projects/2c3431f8-ed10-4ef2-8edb-4873c656497c/badge)](https://nodesecurity.io/orgs/travix-international-bv/projects/2c3431f8-ed10-4ef2-8edb-4873c656497c) [![Join the chat at https://gitter.im/travix-breakpointsjs/travix-breakpointsjs](https://badges.gitter.im/travix-breakpointsjs/travix-breakpointsjs.svg)](https://gitter.im/travix-breakpointsjs/travix-breakpointsjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![npm](https://img.shields.io/npm/v/travix-breakpoints.svg)](https://www.npmjs.com/package/travix-breakpoints) [![Build Status](https://img.shields.io/travis/Travix-International/travix-breakpoints/master.svg)](http://travis-ci.org/Travix-International/travix-breakpoints)
 
 > Breakpoint values for responsive design
+
+Exports (CSS) breakpoint values for various sizes.
+
+## Installation
+
+```
+$ npm install --save travix-breakpoints
+```
+
+## Usage
+
+```js
+import { variables, sizes } from 'travix-breakpoints';
+
+// `variables` is a flat Object of key/value pairs
+// `sizes` is an object keyed by breakpoint sizes, with min/max values
+```
+
+## Development
+
+If you want to modify the breakpoints further, update them in `./lib/sizes.js`, and then run:
+
+```
+$ npm run generate:variables
+```
+
+This will then update the `./lib/variables.js` file accordingly.
 
 ## License
 

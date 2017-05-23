@@ -1,8 +1,12 @@
 {
   "name": "travix-breakpoints",
   "description": "Breakpoint values for responsive design",
-  "private": true,
-  "scripts": {},
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "eslint *.js bin/*.js lib/*.js",
+    "generate:variables": "node ./bin/generateVariables.js",
+    "test": "node test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Travix-International/travix-breakpoints.git"
@@ -16,5 +20,9 @@
     "url": "https://github.com/Travix-International/frint/issues"
   },
   "homepage": "https://github.com/Travix-International/frint#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-travix": "^2.3.2",
+    "lodash": "^4.17.4"
+  }
 }
