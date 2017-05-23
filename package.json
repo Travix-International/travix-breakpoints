@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Travix-International/frint#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
+    "eslint-config-travix": "^2.3.2",
     "lodash": "^4.17.4"
   }
 }
