@@ -1,5 +1,5 @@
-const sizes = require('./lib/sizes');
-const variables = require('./lib/variables');
+const sizes = require('./sizes');
+const variables = require('./variables');
 
 module.exports = {
   sizes: sizes,
