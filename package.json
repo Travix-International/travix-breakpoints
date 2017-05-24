@@ -3,7 +3,7 @@
   "description": "Breakpoint values for responsive design",
   "version": "0.1.0",
   "scripts": {
-    "lint": "eslint *.js bin/*.js lib/*.js",
+    "lint": "eslint *.js bin/*.js",
     "generate:variables": "node ./bin/generateVariables.js",
     "test": "node test.js"
   },
