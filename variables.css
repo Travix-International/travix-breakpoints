@@ -7,8 +7,8 @@
  *   $ npm run generate:variables
  */
 @value tinyMax: 319px;
-@value tinyMin: 0;
-@value tiny: (min-width: 0) and (max-width: 319px);
+@value tinyMin: 0px;
+@value tiny: (min-width: 0px) and (max-width: 319px);
 @value smallMax: 767px;
 @value smallMin: 320px;
 @value small: (min-width: 320px) and (max-width: 767px);
