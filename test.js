@@ -8,8 +8,8 @@ assert.ok(_.isPlainObject(lib.variables));
 
 
 // sizes
-assert.ok(_.isPlainObject(lib.sizes));
-_.each(lib.sizes, function (entries, sizeName) {
+assert.ok(_.isPlainObject(lib.SIZES));
+_.each(lib.SIZES, function (entries, sizeName) {
   const entryKeys = Object.keys(entries);
 
   assert.ok(entryKeys.length > 1);

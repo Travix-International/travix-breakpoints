@@ -7,7 +7,7 @@ const VARIABLE_PREFIX = '--tx-breakpoint';
 const VARIABLES_JS_FILE = path.join(__dirname, '../variables.js');
 const VARIABLES_CSS_FILE = path.join(__dirname, '../variables.css');
 
-const sizes = require('../sizes');
+const { SIZES } = require('../sizes');
 const jsVars = {};
 const cssVarsLines = [];
 
@@ -15,17 +15,17 @@ const cssVarsLines = [];
 /**
  * Prepare variables
  */
-_.each(sizes, function (size, name) {
+_.each(SIZES, function (size, name) {
 
   const prefix = `${VARIABLE_PREFIX}-${name}`;
   _.each(size, function (value, variable) {
-    jsVars[`${prefix}-${variable}`] = value;
+    jsVars[`${prefix}-${variable}`] = `${value}px`;
 
     const cssVarName = _.camelCase(`${name}-${variable}`);
-    cssVarsLines.push(`@value ${cssVarName}: ${value};`);
+    cssVarsLines.push(`@value ${cssVarName}: ${value}px;`);
   });
 
-  const condition = `(min-width: ${size.min}) and (max-width: ${size.max})`;
+  const condition = `(min-width: ${size.min}px) and (max-width: ${size.max}px)`;
   jsVars[prefix] = condition;
   cssVarsLines.push(`@value ${name}: ${condition};`);
 });

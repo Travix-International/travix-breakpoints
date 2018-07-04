@@ -8,8 +8,8 @@
  */
 module.exports = {
   "--tx-breakpoint-tiny-max": "319px",
-  "--tx-breakpoint-tiny-min": "0",
-  "--tx-breakpoint-tiny": "(min-width: 0) and (max-width: 319px)",
+  "--tx-breakpoint-tiny-min": "0px",
+  "--tx-breakpoint-tiny": "(min-width: 0px) and (max-width: 319px)",
   "--tx-breakpoint-small-max": "767px",
   "--tx-breakpoint-small-min": "320px",
   "--tx-breakpoint-small": "(min-width: 320px) and (max-width: 767px)",

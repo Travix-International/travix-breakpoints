@@ -1,22 +1,37 @@
-module.exports = {
-  tiny: {
-    max: "319px",
-    min: "0"
+const TINY = 'tiny';
+const SMALL = 'small';
+const MEDIUM = 'medium';
+const LARGE = 'large';
+const XLARGE = 'xlarge';
+
+const SIZES = {
+  [TINY]: {
+    max: 319,
+    min: 0
   },
-  small:  {
-    max: "767px",
-    min: "320px"
+  [SMALL]: {
+    max: 767,
+    min: 320
   },
-  medium:  {
-    max: "999px",
-    min: "768px"
+  [MEDIUM]: {
+    max: 999,
+    min: 768
   },
-  large:  {
-    max: "1199px",
-    min: "1000px"
+  [LARGE]: {
+    max: 1199,
+    min: 1000
   },
-  xlarge:  {
-    max: "9999px",
-    min: "1200px"
+  [XLARGE]: {
+    max: 9999,
+    min: 1200
   }
+};
+
+module.exports = {
+  TINY,
+  SMALL,
+  MEDIUM,
+  LARGE,
+  XLARGE,
+  SIZES
 };
