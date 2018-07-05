@@ -1,7 +1,7 @@
 {
   "name": "travix-breakpoints",
   "description": "Breakpoint values for responsive design",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "scripts": {
     "lint": "eslint *.js bin/*.js",
     "generate:variables": "node ./bin/generateVariables.js",
